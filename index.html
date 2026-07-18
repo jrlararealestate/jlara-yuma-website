@@ -316,8 +316,11 @@
   <div class="wrap">
     <div class="eyebrow" style="text-align:center"><span class="lang-en">Get In Touch</span><span class="lang-es">Contáctame</span></div>
     <h2 class="title"><span class="lang-en">Let's Get Started</span><span class="lang-es">Empecemos</span></h2>
-    <!-- NOTE: wire this form to CRM lead capture (speed-to-lead). Uses Netlify Forms attribute as fallback. -->
-    <form class="form" name="contact" method="POST" data-netlify="true">
+    <!-- Netlify Forms capture. Submissions route to Follow Up Boss (Max/CRM) via
+         Netlify form-notification email set to JR's FUB lead-capture address. -->
+    <form class="form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/?thanks=1#contact">
+      <input type="hidden" name="form-name" value="contact">
+      <p style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
       <input type="text" name="name" placeholder="Name / Nombre" required>
       <input type="tel" name="phone" placeholder="Phone / Teléfono" required>
       <input type="email" name="email" placeholder="Email / Correo" required>
@@ -424,6 +427,18 @@ function setLang(l){
   try{localStorage.setItem('jrlang',l);}catch(e){}
 }
 (function(){var s='en';try{s=localStorage.getItem('jrlang')||'en';}catch(e){} setLang(s);})();
+(function(){
+  if(location.search.indexOf('thanks=1')>-1){
+    var f=document.querySelector('form.form'); if(!f) return;
+    var en=(document.documentElement.lang!=='es');
+    var msg=document.createElement('div');
+    msg.style.cssText='background:#fff;color:#111114;border-radius:10px;padding:22px;text-align:center;font-weight:600;max-width:620px;margin:40px auto 0';
+    msg.innerHTML= en
+      ? "Thank you! Your message is in — JR or his team will reach out shortly. For anything urgent, call or text <a href=\"tel:+19282566459\" style=\"color:#c8102e\">928-256-6459</a>."
+      : "¡Gracias! Recibimos tu mensaje — JR o su equipo te contactarán pronto. Si es urgente, llama o textea al <a href=\"tel:+19282566459\" style=\"color:#c8102e\">928-256-6459</a>.";
+    f.parentNode.replaceChild(msg,f);
+  }
+})();
 </script>
 </body>
 </html>

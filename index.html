@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jose "JR" Lara — Yuma &amp; Arizona Real Estate Expert</title>
+<meta name="description" content="Jose 'JR' Lara, REALTOR with The Realty Agency. Buy, sell, or rent in Yuma, San Luis, Somerton &amp; the Foothills. Bilingual, start-to-finish service. Real People, Real Results.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --red:#c8102e; --red-dark:#9c0c23; --black:#111114; --ink:#1c1c22;
+    --gray:#6b6b73; --line:#e7e7ea; --bg:#ffffff; --soft:#f6f6f7; --white:#ffffff;
+    --serif:'Playfair Display',Georgia,serif; --sans:'Inter',Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+  h1,h2,h3{font-family:var(--serif);line-height:1.15;color:var(--black)}
+  a{color:inherit;text-decoration:none}
+  .lang-es{display:none}
+  section{padding:84px 0}
+  .eyebrow{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:14px}
+  .title{font-size:38px;text-align:center}
+  .title-sub{text-align:center;color:var(--gray);margin:12px auto 0;max-width:640px}
+
+  /* buttons */
+  .btn{display:inline-block;background:var(--red);color:#fff;font-weight:700;font-size:15px;
+    padding:14px 30px;border-radius:8px;border:none;cursor:pointer;transition:.2s;letter-spacing:.3px}
+  .btn:hover{background:var(--red-dark);transform:translateY(-1px)}
+  .btn.ghost{background:transparent;border:2px solid #fff;color:#fff}
+  .btn.ghost:hover{background:#fff;color:var(--black)}
+  .btn.dark{background:var(--black)}
+  .btn.dark:hover{background:#000}
+
+  /* nav */
+  header.nav{position:sticky;top:0;z-index:50;background:rgba(17,17,20,.97);backdrop-filter:blur(6px)}
+  .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
+  .brand{font-family:var(--serif);font-weight:800;color:#fff;font-size:20px}
+  .brand span{color:var(--red)}
+  .nav a.link{color:#eaeaea;font-size:14px;font-weight:500;margin-left:22px}
+  .nav a.link:hover{color:var(--red)}
+  .navlinks{display:flex;align-items:center}
+  .langtog{margin-left:24px;display:flex;border:1px solid var(--red);border-radius:20px;overflow:hidden}
+  .langtog button{background:transparent;color:#eaeaea;border:none;padding:5px 13px;font-size:12px;font-weight:700;cursor:pointer}
+  .langtog button.on{background:var(--red);color:#fff}
+  .menutoggle{display:none;background:none;border:none;color:#fff;font-size:26px;cursor:pointer}
+
+  /* hero */
+  .hero{background:linear-gradient(rgba(17,17,20,.72),rgba(17,17,20,.82)),url('https://iili.io/C1OtooG.jpg') center/cover;
+    color:#fff;text-align:center;padding:130px 22px}
+  .hero h1{color:#fff;font-size:52px;font-weight:800}
+  .hero p{max-width:640px;margin:18px auto 30px;font-size:19px;color:#f0f0f0}
+  .hero .btn{margin:6px}
+
+  /* about */
+  .about{display:grid;grid-template-columns:0.9fr 1.1fr;gap:48px;align-items:center}
+  .about img{width:100%;border-radius:16px;box-shadow:0 18px 50px rgba(0,0,0,.18)}
+  .badge{display:inline-block;background:var(--red);color:#fff;font-size:11px;font-weight:700;
+    letter-spacing:2px;padding:6px 14px;border-radius:20px;margin-bottom:16px}
+  .about h2{font-size:34px;margin-bottom:14px}
+  .about p{margin-bottom:14px;color:var(--ink)}
+  .about .facts{background:var(--soft);border-left:4px solid var(--red);padding:16px 18px;border-radius:8px;font-size:15px;margin:18px 0}
+
+  /* services */
+  .services{background:var(--soft)}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:44px}
+  .card{background:#fff;border-radius:16px;padding:34px 28px;text-align:center;border:1px solid var(--line);transition:.2s}
+  .card:hover{transform:translateY(-6px);box-shadow:0 16px 40px rgba(0,0,0,.1)}
+  .card .ic{font-size:40px;margin-bottom:14px}
+  .card h3{font-size:23px;margin-bottom:10px}
+  .card p{color:var(--gray);font-size:15px;margin-bottom:20px}
+
+  /* search band */
+  .searchband{background:var(--black);color:#fff;text-align:center}
+  .searchband h2{color:#fff;font-size:34px}
+  .searchband p{color:#cfcfd4;max-width:560px;margin:14px auto 26px}
+
+  /* VIP */
+  .vip{background:linear-gradient(135deg,#141417,#26060c)}
+  .vip .eyebrow{color:#ff5c73;text-align:center}
+  .vip h2{color:#fff;text-align:center;font-size:40px}
+  .vip .lead{color:#d9d9de;text-align:center;max-width:720px;margin:16px auto 0;font-size:18px}
+  .vipcards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin:46px 0}
+  .vipcard{background:#fff;border-radius:16px;padding:32px 28px;box-shadow:0 10px 34px rgba(0,0,0,.3)}
+  .vipcard .ic{width:52px;height:52px;border-radius:12px;background:var(--red);color:#fff;font-size:26px;
+    display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+  .vipcard h3{font-size:21px;margin-bottom:10px}
+  .vipcard p{color:var(--ink);font-size:14.5px}
+  .vipcta{text-align:center}
+  .vipcta p{color:#fff;font-size:18px;margin-bottom:18px}
+
+  /* testimonials */
+  .quotes{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:44px}
+  .quote{background:#fff;border:1px solid var(--line);border-radius:14px;padding:28px;box-shadow:0 6px 20px rgba(0,0,0,.04)}
+  .stars{color:var(--red);letter-spacing:2px;margin-bottom:12px}
+  .quote p{font-style:italic;color:var(--ink);margin-bottom:14px}
+  .who{font-weight:700;color:var(--black)}
+
+  /* reviews / videos */
+  .band{text-align:center;background:var(--soft)}
+  .sociallinks a{color:var(--red);font-weight:600;margin:0 6px}
+
+  /* contact */
+  .contact{background:var(--black);color:#fff}
+  .contact .title{color:#fff}
+  .form{max-width:620px;margin:40px auto 0}
+  .form input,.form textarea{width:100%;padding:14px 16px;margin-bottom:14px;border-radius:8px;border:1px solid #33333c;
+    background:#1c1c22;color:#fff;font-family:var(--sans);font-size:15px}
+  .form textarea{min-height:120px;resize:vertical}
+  .form .consent{font-size:12px;color:#a9a9b2;margin-bottom:16px}
+  .form .consent a{color:#ff8b9c}
+  .contact .callrow{text-align:center;margin-top:22px;color:#cfcfd4}
+  .contact .callrow a{color:#fff;font-weight:700}
+
+  /* footer */
+  footer.foot{background:#000;color:#c8c8ce;text-align:center;padding:40px 22px;font-size:13px;line-height:1.8}
+  footer.foot .social a{color:#fff;margin:0 8px;font-weight:600}
+  footer.foot a{color:#c8c8ce}
+
+  /* legal */
+  .legal{background:#fff}
+  .legal h2{font-size:28px;margin-bottom:8px}
+  .legal h3{font-size:17px;margin:18px 0 6px}
+  .legal p,.legal li{font-size:14px;color:var(--gray)}
+  .legal ul{padding-left:20px}
+
+  @media(max-width:860px){
+    .about{grid-template-columns:1fr}
+    .cards,.vipcards,.quotes{grid-template-columns:1fr}
+    .hero h1{font-size:36px}.hero p{font-size:17px}
+    .title,.vip h2{font-size:30px}
+    .navlinks{display:none}
+    .navlinks.open{display:flex;flex-direction:column;position:absolute;top:66px;left:0;right:0;
+      background:#111114;padding:16px 22px;align-items:flex-start}
+    .navlinks.open a.link{margin:8px 0}
+    .navlinks.open .langtog{margin:12px 0 0}
+    .menutoggle{display:block}
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="wrap">
+    <div class="brand">JR<span>.</span> Lara</div>
+    <button class="menutoggle" onclick="document.getElementById('nav').classList.toggle('open')">&#9776;</button>
+    <nav class="navlinks" id="nav">
+      <a class="link" href="#about"><span class="lang-en">About</span><span class="lang-es">Acerca</span></a>
+      <a class="link" href="#services"><span class="lang-en">Buy / Sell / Rent</span><span class="lang-es">Comprar / Vender / Rentar</span></a>
+      <a class="link" href="#vip"><span class="lang-en">VIP Club</span><span class="lang-es">Club VIP</span></a>
+      <a class="link" href="#testimonials"><span class="lang-en">Reviews</span><span class="lang-es">Reseñas</span></a>
+      <a class="link" href="#contact"><span class="lang-en">Contact</span><span class="lang-es">Contacto</span></a>
+      <div class="langtog">
+        <button id="l-en" class="on" onclick="setLang('en')">EN</button>
+        <button id="l-es" onclick="setLang('es')">ES</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <h1><span class="lang-en">Your Yuma &amp; Arizona<br>Real Estate Expert</span><span class="lang-es">Tu Experto en Bienes<br>Raíces en Yuma y Arizona</span></h1>
+  <p><span class="lang-en">Buying, selling, or renting in the Yuma area? I'm Jose "JR" Lara — your local market expert, with you every step of the way.</span><span class="lang-es">¿Comprando, vendiendo o rentando en el área de Yuma? Soy Jose "JR" Lara, tu experto local, contigo en cada paso.</span></p>
+  <a class="btn" href="#search"><span class="lang-en">Search Homes</span><span class="lang-es">Buscar Casas</span></a>
+  <a class="btn ghost" href="#contact"><span class="lang-en">Contact Me</span><span class="lang-es">Contáctame</span></a>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap about">
+    <img src="https://iili.io/C1OtooG.jpg" alt="Jose JR Lara, REALTOR in Yuma Arizona">
+    <div class="txt">
+      <span class="badge"><span class="lang-en">MEET YOUR REALTOR&reg;</span><span class="lang-es">CONOCE A TU REALTOR&reg;</span></span>
+      <h2>Jose "JR" Lara</h2>
+      <div class="lang-en">
+        <p>Hi, I'm JR Lara, a real estate agent serving Yuma, the Foothills, San Luis, Somerton, and the communities around them.</p>
+        <p>I got into real estate because I wanted the Yuma community to have a licensed Realtor who stays with them from start to finish — not just for the sale, but through the whole journey of buying, owning, and one day selling. I wanted to be the reliable point of contact for whatever you need, and to always put one thing first: protecting your investment.</p>
+        <p>I work in English and Spanish, so nothing gets lost in translation — from the first showing to the closing table. You deserve someone who picks up the phone, tells you the truth, and fights for your best deal.</p>
+      </div>
+      <div class="lang-es">
+        <p>Hola, soy JR Lara, agente de bienes raíces sirviendo a Yuma, los Foothills, San Luis, Somerton y las comunidades cercanas.</p>
+        <p>Entré a los bienes raíces porque quería que la comunidad de Yuma tuviera un Realtor con licencia que la acompañe de principio a fin — no solo en la venta, sino durante todo el proceso de comprar, ser dueño y algún día vender. Quiero ser tu punto de contacto confiable para lo que necesites, y siempre poner algo primero: proteger tu inversión.</p>
+        <p>Trabajo en inglés y español, para que nada se pierda en la traducción — desde la primera cita hasta el cierre. Mereces a alguien que conteste el teléfono, te diga la verdad y luche por tu mejor trato.</p>
+      </div>
+      <div class="facts">
+        <strong><span class="lang-en">Serving:</span><span class="lang-es">Sirviendo:</span></strong> Yuma, Foothills, San Luis, Somerton &amp; surrounding AZ communities.<br>
+        <strong><span class="lang-en">Languages:</span><span class="lang-es">Idiomas:</span></strong> English &amp; Spanish (Se habla español).<br>
+        <strong>AZ License #:</strong> SA710600000
+      </div>
+      <a class="btn dark" href="#contact"><span class="lang-en">Let's Talk</span><span class="lang-es">Hablemos</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="services">
+  <div class="wrap">
+    <div class="eyebrow" style="text-align:center"><span class="lang-en">What I Do</span><span class="lang-es">Lo Que Hago</span></div>
+    <h2 class="title"><span class="lang-en">How I Can Help</span><span class="lang-es">Cómo Te Puedo Ayudar</span></h2>
+    <p class="title-sub"><span class="lang-en">One stop for everything real estate in the Yuma area.</span><span class="lang-es">Todo lo que necesitas de bienes raíces en el área de Yuma.</span></p>
+    <div class="cards">
+      <div class="card">
+        <div class="ic">&#127968;</div>
+        <h3><span class="lang-en">Buying</span><span class="lang-es">Comprar</span></h3>
+        <p><span class="lang-en">Find the right home at the right price — from first-time buyers to seasoned investors.</span><span class="lang-es">Encuentra la casa ideal al precio correcto — desde primeros compradores hasta inversionistas.</span></p>
+        <a class="btn" href="https://joselara.therealtyagency.com/ForSell/MapView/?sale_rent=For%20Sell" target="_blank" rel="noopener"><span class="lang-en">Search Homes</span><span class="lang-es">Buscar Casas</span></a>
+      </div>
+      <div class="card">
+        <div class="ic">&#128176;</div>
+        <h3><span class="lang-en">Selling</span><span class="lang-es">Vender</span></h3>
+        <p><span class="lang-en">Get top dollar with expert pricing, marketing, and negotiation. Know your home's value.</span><span class="lang-es">Obtén el mejor precio con estrategia, marketing y negociación experta. Conoce el valor de tu casa.</span></p>
+        <a class="btn" href="https://joselara.therealtyagency.com/PropertyValuation/Sell" target="_blank" rel="noopener"><span class="lang-en">Get My Home's Value</span><span class="lang-es">Valor de Mi Casa</span></a>
+      </div>
+      <div class="card">
+        <div class="ic">&#128273;</div>
+        <h3><span class="lang-en">Renting</span><span class="lang-es">Rentar</span></h3>
+        <p><span class="lang-en">Looking to rent, or a renter ready to become a buyer? Let's map out your best path.</span><span class="lang-es">¿Buscas rentar, o rentas y quieres comprar? Planeemos tu mejor camino.</span></p>
+        <a class="btn" href="https://yumarentalhomes.com/properties/" target="_blank" rel="noopener"><span class="lang-en">Explore Rentals</span><span class="lang-es">Ver Rentas</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SEARCH BAND -->
+<section id="search" class="searchband">
+  <div class="wrap">
+    <h2><span class="lang-en">Search Yuma-Area Homes</span><span class="lang-es">Busca Casas en el Área de Yuma</span></h2>
+    <p><span class="lang-en">Browse active listings and find your next home. New properties hit the market every day.</span><span class="lang-es">Explora propiedades activas y encuentra tu próxima casa. Cada día hay nuevas propiedades.</span></p>
+    <a class="btn" href="https://joselara.therealtyagency.com/ForSell/MapView/?sale_rent=For%20Sell" target="_blank" rel="noopener"><span class="lang-en">View Listings</span><span class="lang-es">Ver Propiedades</span></a>
+  </div>
+</section>
+
+<!-- VIP CLUB -->
+<section id="vip" class="vip">
+  <div class="wrap">
+    <div class="eyebrow"><span class="lang-en">Exclusive · By Invitation</span><span class="lang-es">Exclusivo · Por Invitación</span></div>
+    <h2><span class="lang-en">The Homeowner VIP Club</span><span class="lang-es">El Club VIP para Propietarios</span></h2>
+    <p class="lead"><span class="lang-en">My relationship with you doesn't end at the closing table — it begins there. Every client becomes a VIP member for life, with a full team looking after your biggest investment.</span><span class="lang-es">Mi relación contigo no termina en el cierre — ahí empieza. Cada cliente se convierte en miembro VIP de por vida, con todo un equipo cuidando tu mayor inversión.</span></p>
+    <div class="vipcards">
+      <div class="vipcard">
+        <div class="ic">&#127968;</div>
+        <h3><span class="lang-en">Home Management, Handled</span><span class="lang-es">Tu Casa, Bien Cuidada</span></h3>
+        <p><span class="lang-en">Your own home dashboard, seasonal maintenance reminders, and a vetted network of trusted Yuma pros — plumbers, HVAC, handymen — one message away.</span><span class="lang-es">Tu propio panel del hogar, recordatorios de mantenimiento por temporada, y una red de profesionales de confianza en Yuma — a un mensaje de distancia.</span></p>
+      </div>
+      <div class="vipcard">
+        <div class="ic">&#128200;</div>
+        <h3><span class="lang-en">Annual Equity Review</span><span class="lang-es">Revisión Anual de Plusvalía</span></h3>
+        <p><span class="lang-en">Know what your home is worth every year, get first alerts when rates drop, and always understand your options — hold, refinance, or sell.</span><span class="lang-es">Conoce el valor de tu casa cada año, recibe alertas cuando bajen las tasas, y entiende tus opciones — mantener, refinanciar o vender.</span></p>
+      </div>
+      <div class="vipcard">
+        <div class="ic">&#127873;</div>
+        <h3><span class="lang-en">Members &amp; Referral Perks</span><span class="lang-es">Beneficios y Referidos</span></h3>
+        <p><span class="lang-en">Home-anniversary gifts, exclusive client events, and a thank-you every time you refer someone you care about.</span><span class="lang-es">Regalos de aniversario, eventos exclusivos para clientes, y un agradecimiento cada vez que refieras a alguien.</span></p>
+      </div>
+    </div>
+    <div class="vipcta">
+      <p><span class="lang-en">Buying or selling with me? You're already in.</span><span class="lang-es">¿Compras o vendes conmigo? Ya estás dentro.</span></p>
+      <a class="btn" href="#contact"><span class="lang-en">Join the VIP Club</span><span class="lang-es">Únete al Club VIP</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="wrap">
+    <div class="eyebrow" style="text-align:center"><span class="lang-en">Testimonials</span><span class="lang-es">Testimonios</span></div>
+    <h2 class="title"><span class="lang-en">What Clients Say</span><span class="lang-es">Lo Que Dicen Mis Clientes</span></h2>
+    <p class="title-sub"><span class="lang-en">Real results for real Yuma families.</span><span class="lang-es">Resultados reales para familias reales de Yuma.</span></p>
+    <div class="quotes">
+      <div class="quote"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>"This young man is an excellent advisor — extremely kind, dedicated, responsible, and honest. He took the time to answer every question my husband and I had. I wholeheartedly recommend him. If we ever decide to purchase another property, we would definitely look for JR again!"</p>
+        <div class="who">— Erica Puente</div></div>
+      <div class="quote"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>"We had such a great experience buying our own home — the attention we received was phenomenal! JR was so attentive and worked hard for us, even after hours, answering every question. He eased our anxiety and answered every call and text! Definitely recommend him!"</p>
+        <div class="who">— Karina Cabrera</div></div>
+      <div class="quote"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>"Working with Jose and his team was excellent from start to finish. He guided us through the entire buying process and ensured everything moved quickly and professionally. We never felt pressured, and he always had our best interests at heart. Highly recommend!"</p>
+        <div class="who">— Juan Carlos Varela</div></div>
+      <div class="quote"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p><span class="lang-en">"JR made our first home purchase feel easy. Patient, honest, and always available in English and Spanish. We're so grateful."</span><span class="lang-es">"JR hizo que la compra de nuestra primera casa fuera fácil. Paciente, honesto y siempre disponible en inglés y español. Muy agradecidos."</span></p>
+        <div class="who">— Antonio &amp; Miriam</div></div>
+    </div>
+    <div style="text-align:center;margin-top:36px">
+      <a class="btn dark" href="https://www.google.com/search?q=jr+lara+realtor" target="_blank" rel="noopener"><span class="lang-en">Read My Reviews on Google</span><span class="lang-es">Lee Mis Reseñas en Google</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSINGS / SOCIAL -->
+<section id="videos" class="band">
+  <div class="wrap">
+    <div class="eyebrow" style="text-align:center"><span class="lang-en">Closings &amp; Content</span><span class="lang-es">Cierres y Contenido</span></div>
+    <h2 class="title"><span class="lang-en">See the Wins</span><span class="lang-es">Mira los Logros</span></h2>
+    <p class="title-sub"><span class="lang-en">Follow along for closings, market tips, and Yuma real estate — in English and Spanish.</span><span class="lang-es">Sígueme para ver cierres, consejos del mercado y bienes raíces en Yuma — en inglés y español.</span></p>
+    <p class="sociallinks" style="margin-top:24px">
+      <a href="https://www.instagram.com/jrlaraa/" target="_blank" rel="noopener">Instagram</a> &bull;
+      <a href="https://www.tiktok.com/@jrlaraaa" target="_blank" rel="noopener">TikTok</a> &bull;
+      <a href="https://www.facebook.com/junior.l.peralta/" target="_blank" rel="noopener">Facebook</a>
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="eyebrow" style="text-align:center"><span class="lang-en">Get In Touch</span><span class="lang-es">Contáctame</span></div>
+    <h2 class="title"><span class="lang-en">Let's Get Started</span><span class="lang-es">Empecemos</span></h2>
+    <!-- NOTE: wire this form to CRM lead capture (speed-to-lead). Uses Netlify Forms attribute as fallback. -->
+    <form class="form" name="contact" method="POST" data-netlify="true">
+      <input type="text" name="name" placeholder="Name / Nombre" required>
+      <input type="tel" name="phone" placeholder="Phone / Teléfono" required>
+      <input type="email" name="email" placeholder="Email / Correo" required>
+      <textarea name="message" placeholder="How can I help? / ¿Cómo te puedo ayudar?"></textarea>
+      <div class="consent"><span class="lang-en">By submitting, you agree to be contacted by phone, text, or email. See our </span><span class="lang-es">Al enviar, aceptas ser contactado por teléfono, texto o correo. Consulta nuestra </span><a href="#privacy">Privacy Policy</a> &amp; <a href="#terms">Terms</a>.</div>
+      <button class="btn" type="submit"><span class="lang-en">Send Message</span><span class="lang-es">Enviar Mensaje</span></button>
+    </form>
+    <div class="callrow">
+      <span class="lang-en">Prefer to call or text?</span><span class="lang-es">¿Prefieres llamar o textear?</span>
+      <a href="tel:+19282566459"><strong>928-256-6459</strong></a> &nbsp;|&nbsp;
+      <a href="mailto:itsjunior.lp@gmail.com">itsjunior.lp@gmail.com</a>
+    </div>
+  </div>
+</section>
+
+<!-- LEGAL -->
+<section id="privacy" class="legal">
+  <div class="wrap" style="max-width:820px">
+    <h2 class="lang-en">Privacy Policy</h2><h2 class="lang-es">Política de Privacidad</h2>
+    <div class="lang-en">
+      <h3>Information We Collect</h3>
+      <p>We collect information you voluntarily provide — such as your name, phone number, email, and message — when you submit a form or contact us.</p>
+      <h3>How We Use It</h3>
+      <p>To respond to your inquiry and assist you with buying, selling, or renting real estate.</p>
+      <h3>No Sale or Sharing for Marketing</h3>
+      <p>We do not sell your information. Text messaging originator opt-in data and consent are never shared with third parties for marketing.</p>
+      <h3>SMS / Text Messaging</h3>
+      <p>By providing your number you consent to receive calls and texts. Message and data rates may apply. Reply STOP to opt out at any time.</p>
+      <h3>Contact</h3>
+      <p>Questions? Email <a href="mailto:itsjunior.lp@gmail.com">itsjunior.lp@gmail.com</a> or call <a href="tel:+19282566459">928-256-6459</a>.</p>
+    </div>
+    <div class="lang-es">
+      <h3>Información Que Recopilamos</h3>
+      <p>Recopilamos la información que proporcionas voluntariamente — nombre, teléfono, correo y mensaje — al enviar un formulario o contactarnos.</p>
+      <h3>Cómo La Usamos</h3>
+      <p>Para responder a tu consulta y ayudarte a comprar, vender o rentar bienes raíces.</p>
+      <h3>No Vendemos Tu Información</h3>
+      <p>No vendemos tu información. Los datos de consentimiento para mensajes de texto nunca se comparten con terceros para marketing.</p>
+      <h3>Mensajes de Texto (SMS)</h3>
+      <p>Al proporcionar tu número aceptas recibir llamadas y textos. Pueden aplicar tarifas. Responde STOP para cancelar en cualquier momento.</p>
+      <h3>Contacto</h3>
+      <p>¿Preguntas? Escribe a <a href="mailto:itsjunior.lp@gmail.com">itsjunior.lp@gmail.com</a> o llama al <a href="tel:+19282566459">928-256-6459</a>.</p>
+    </div>
+
+    <h2 id="terms" class="lang-en" style="margin-top:40px">Terms &amp; Conditions (SMS)</h2><h2 class="lang-es" style="margin-top:40px">Términos y Condiciones (SMS)</h2>
+    <ul class="lang-en">
+      <li>By opting in, you agree to receive real estate related text messages from Jose "JR" Lara.</li>
+      <li>Message frequency varies. Message and data rates may apply.</li>
+      <li>Reply STOP to unsubscribe, HELP for help, or email <a href="mailto:itsjunior.lp@gmail.com">itsjunior.lp@gmail.com</a>.</li>
+      <li>Carriers are not liable for delayed or undelivered messages.</li>
+      <li>See our <a href="#privacy">Privacy Policy</a> for how we handle your data.</li>
+    </ul>
+    <ul class="lang-es">
+      <li>Al aceptar, recibirás mensajes de texto relacionados con bienes raíces de Jose "JR" Lara.</li>
+      <li>La frecuencia de mensajes varía. Pueden aplicar tarifas de mensajes y datos.</li>
+      <li>Responde STOP para cancelar, HELP para ayuda, o escribe a <a href="mailto:itsjunior.lp@gmail.com">itsjunior.lp@gmail.com</a>.</li>
+      <li>Los operadores no son responsables de mensajes retrasados o no entregados.</li>
+      <li>Consulta nuestra <a href="#privacy">Política de Privacidad</a>.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="social">
+    <a href="https://www.instagram.com/jrlaraa/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.tiktok.com/@jrlaraaa" target="_blank" rel="noopener">TikTok</a>
+    <a href="https://www.facebook.com/junior.l.peralta/" target="_blank" rel="noopener">Facebook</a>
+  </div>
+  <p style="margin-top:14px">Jose "JR" Lara, REALTOR&reg; &bull; Jose Lara Real Estate PLLC &bull; The Realty Agency<br>
+  2052 S 4th Ave, Yuma, AZ 85364 &bull; 928-256-6459 &bull; itsjunior.lp@gmail.com &bull; AZ License #SA710600000<br>
+  <a href="#privacy">Privacy Policy</a> &nbsp;|&nbsp; <a href="#terms">Terms &amp; Conditions</a></p>
+  <p style="margin-top:10px;color:#7a7a82">Equal Housing Opportunity. &copy; 2026 Jose Lara Real Estate PLLC. Real People, Real Results.</p>
+</footer>
+
+<script>
+function setLang(l){
+  document.querySelectorAll('.lang-en').forEach(function(e){e.style.display=(l==='en')?'':'none';});
+  document.querySelectorAll('.lang-es').forEach(function(e){e.style.display=(l==='es')?'':'none';});
+  document.getElementById('l-en').classList.toggle('on',l==='en');
+  document.getElementById('l-es').classList.toggle('on',l==='es');
+  document.documentElement.lang=l;
+  try{localStorage.setItem('jrlang',l);}catch(e){}
+}
+(function(){var s='en';try{s=localStorage.getItem('jrlang')||'en';}catch(e){} setLang(s);})();
+</script>
+</body>
+</html>

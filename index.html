@@ -118,6 +118,11 @@
   footer.foot{background:#000;color:#c8c8ce;text-align:center;padding:40px 22px;font-size:13px;line-height:1.8}
   footer.foot .social a{color:#fff;margin:0 8px;font-weight:600}
   footer.foot a{color:#c8c8ce}
+  .logorow{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:26px;margin:0 auto 26px;padding-bottom:26px;border-bottom:1px solid #26262c;max-width:640px}
+  .logorow .brokwrap img{height:54px;width:auto;display:block;background:#fff;border-radius:8px;padding:8px}
+  .logorow .complogo{display:flex;align-items:center;gap:8px;color:#fff}
+  .logorow .complogo em{font-style:normal;font-size:10px;letter-spacing:1.5px;font-weight:700;line-height:1.25;text-align:left;color:#c8c8ce}
+  .logorow .complogo svg{flex:none}
 
   /* legal */
   .legal{background:#fff}
@@ -375,6 +380,27 @@
 
 <!-- FOOTER -->
 <footer class="foot">
+  <!-- brand + compliance logos -->
+  <div class="logorow">
+    <span class="brokwrap"><img src="assets/realty-agency-logo.jpg" alt="The Realty Agency"></span>
+    <span class="complogo" aria-label="REALTOR&reg;" title="REALTOR&reg;">
+      <svg width="46" height="46" viewBox="0 0 64 64" role="img" aria-label="REALTOR logo">
+        <rect x="6" y="6" width="52" height="52" rx="7" fill="#ffffff"/>
+        <text x="32" y="47" font-family="Georgia,'Times New Roman',serif" font-size="44" font-weight="bold" fill="#08213b" text-anchor="middle">R</text>
+      </svg>
+      <em>REALTOR&reg;</em>
+    </span>
+    <span class="complogo" aria-label="Equal Housing Opportunity" title="Equal Housing Opportunity">
+      <svg width="46" height="46" viewBox="0 0 64 64" role="img" aria-label="Equal Housing Opportunity logo">
+        <rect x="4" y="4" width="56" height="56" rx="7" fill="#ffffff"/>
+        <path d="M32 13 L52 30 H46 V49 H18 V30 H12 Z" fill="#08213b"/>
+        <rect x="25" y="34" width="14" height="3.5" fill="#ffffff"/>
+        <rect x="25" y="40" width="14" height="3.5" fill="#ffffff"/>
+      </svg>
+      <em>EQUAL HOUSING<br>OPPORTUNITY</em>
+    </span>
+  </div>
+
   <div class="social">
     <a href="https://www.instagram.com/jrlaraa/" target="_blank" rel="noopener">Instagram</a>
     <a href="https://www.tiktok.com/@jrlaraaa" target="_blank" rel="noopener">TikTok</a>
@@ -383,7 +409,7 @@
   <p style="margin-top:14px">Jose "JR" Lara, REALTOR&reg; &bull; Jose Lara Real Estate PLLC &bull; The Realty Agency<br>
   2052 S 4th Ave, Yuma, AZ 85364 &bull; 928-256-6459 &bull; itsjunior.lp@gmail.com &bull; AZ License #SA710600000<br>
   <a href="#privacy">Privacy Policy</a> &nbsp;|&nbsp; <a href="#terms">Terms &amp; Conditions</a></p>
-  <p style="margin-top:10px;color:#7a7a82">Equal Housing Opportunity. &copy; 2026 Jose Lara Real Estate PLLC. Real People, Real Results.</p>
+  <p style="margin-top:10px;color:#7a7a82">&copy; 2026 Jose Lara Real Estate PLLC. Real People, Real Results.</p>
 </footer>
 
 <script>

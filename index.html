@@ -37,8 +37,10 @@
   /* nav */
   header.nav{position:sticky;top:0;z-index:50;background:rgba(17,17,20,.97);backdrop-filter:blur(6px)}
   .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
-  .brand{font-family:var(--serif);font-weight:800;color:#fff;font-size:20px}
-  .brand span{color:var(--red)}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-family:var(--serif);font-weight:800;color:#fff;font-size:20px}
+  .brand .brandlogo{height:40px;width:auto;display:block;background:#fff;border-radius:6px;padding:5px}
+  .brand .brandtext i{color:var(--red);font-style:normal}
+  @media(max-width:600px){.brand .brandtext{display:none}.brand .brandlogo{height:38px}}
   .nav a.link{color:#eaeaea;font-size:14px;font-weight:500;margin-left:22px}
   .nav a.link:hover{color:var(--red)}
   .navlinks{display:flex;align-items:center}
@@ -150,7 +152,7 @@
 <!-- NAV -->
 <header class="nav">
   <div class="wrap">
-    <div class="brand">JR<span>.</span> Lara</div>
+    <a class="brand" href="#top"><img class="brandlogo" src="assets/realty-agency-logo.jpg" alt="The Realty Agency"><span class="brandtext">JR<i>.</i> Lara</span></a>
     <button class="menutoggle" onclick="document.getElementById('nav').classList.toggle('open')">&#9776;</button>
     <nav class="navlinks" id="nav">
       <a class="link" href="#about"><span class="lang-en">About</span><span class="lang-es">Acerca</span></a>

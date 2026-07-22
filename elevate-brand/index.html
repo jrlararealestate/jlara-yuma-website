@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elevate Real Estate Group — Brand & Logo Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#111114; --red:#c8102e; --white:#ffffff;
+  --steel:#5b6570; --fog:#f4f2ee; --line:#e3e0da;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',Helvetica,Arial,sans-serif;color:var(--ink);background:var(--fog);line-height:1.6}
+.wrap{max-width:1000px;margin:0 auto;padding:0 22px}
+section{padding:64px 0;border-bottom:1px solid var(--line)}
+.kicker{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:10px}
+h2{font-family:'Playfair Display',serif;font-size:34px;line-height:1.15;margin-bottom:10px}
+h3{font-family:'Playfair Display',serif;font-size:21px;margin:22px 0 8px}
+p.lead{font-size:17px;color:#3a3a3f;max-width:640px}
+.small{font-size:13px;color:#6a6a70}
+.grid{display:grid;gap:20px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:760px){.g2,.g3,.g4{grid-template-columns:1fr}}
+.card{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:22px;text-align:center}
+.card .cap{font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#8a8a90;margin-top:14px;font-weight:600}
+.card .use{font-size:12.5px;color:#55555b;margin-top:6px;line-height:1.45}
+.dark{background:var(--ink);color:#fff}
+.dark .cap{color:#9a9aa2}
+.dark .use{color:#c3c3cc}
+
+/* ---------- HERO ---------- */
+.hero{background:var(--ink);color:#fff;padding:80px 0 70px;text-align:center;border-bottom:5px solid var(--red)}
+.hero .kicker{color:#ff5f74}
+.hero h1{font-family:'Playfair Display',serif;font-size:46px;line-height:1.05;margin:6px 0 14px}
+.hero p{color:#c8c8d0;max-width:560px;margin:0 auto;font-size:16px}
+.hero .mk{margin:0 auto 22px;max-width:360px}
+
+/* ---------- LOGO MARK (SVG driven by currentColor) ---------- */
+.mk{display:block;width:100%}
+.lockup{display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--ink)}
+.lockup svg.bridge{width:190px;height:auto;display:block}
+.word{font-family:'Playfair Display',serif;font-weight:600;letter-spacing:.34em;text-indent:.34em;line-height:1;margin-top:6px}
+.word.big{font-size:38px}
+.word.mid{font-size:26px}
+.word.sm{font-size:18px}
+.rule{display:flex;align-items:center;gap:8px;margin-top:7px;width:100%;justify-content:center}
+.rule::before,.rule::after{content:"";height:1px;background:currentColor;flex:1;max-width:52px;opacity:.55}
+.sub{font-size:11px;letter-spacing:.28em;text-transform:uppercase;font-weight:600;white-space:nowrap}
+.tag{font-size:9.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--red);margin-top:8px;font-weight:600}
+.dark .tag{color:#ff5f74}
+.reverse{color:#fff}
+.onred{color:#fff}
+
+/* badge */
+.badge{position:relative;width:210px;height:210px;border:2px solid currentColor;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--ink);margin:0 auto}
+.badge svg.bridge{width:120px}
+.badge .word{font-size:15px;margin-top:2px}
+.badge .arc{position:absolute;top:14px;font-size:12px;letter-spacing:.3em;font-weight:600}
+.badge .arcb{position:absolute;bottom:20px;font-size:9.5px;letter-spacing:.24em;text-transform:uppercase;font-weight:600}
+
+/* monogram */
+.mono{width:150px;height:150px;border-radius:50%;background:var(--ink);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto}
+.mono svg.bridge{width:96px}
+.mono .m{font-family:'Playfair Display',serif;font-size:15px;letter-spacing:.3em;text-indent:.3em;margin-top:2px}
+.mono.red{background:var(--red)}
+
+/* color swatches */
+.sw{border-radius:12px;overflow:hidden;border:1px solid var(--line);background:#fff}
+.sw .chip{height:96px}
+.sw .meta{padding:12px 14px}
+.sw .nm{font-weight:700;font-size:14px}
+.sw .hx{font-family:ui-monospace,Menlo,monospace;font-size:12.5px;color:#6a6a70;margin-top:3px}
+.sw .role{font-size:12px;color:#8a8a90;margin-top:6px}
+
+/* type specimen */
+.spec{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px}
+.spec .pf{font-family:'Playfair Display',serif}
+.spec .big{font-size:44px;line-height:1}
+.spec .inter{font-family:'Inter'}
+
+/* do / dont */
+.dl{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+.dl h4{font-size:14px;letter-spacing:1px;text-transform:uppercase;margin-bottom:10px}
+.dl.do h4{color:#1f8a4c}.dl.dont h4{color:var(--red)}
+.dl li{list-style:none;font-size:14px;padding:6px 0 6px 26px;position:relative;color:#3a3a3f;border-top:1px solid #f0eee9}
+.dl li:first-child{border-top:none}
+.dl.do li::before{content:"✓";position:absolute;left:0;color:#1f8a4c;font-weight:700}
+.dl.dont li::before{content:"✕";position:absolute;left:0;color:var(--red);font-weight:700}
+
+/* clearspace */
+.clearbox{background:#fff;border:1px solid var(--line);border-radius:14px;padding:30px;text-align:center}
+.csvg{max-width:420px;margin:0 auto}
+
+/* applications */
+.app{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.app .head{font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#8a8a90;font-weight:600;padding:12px 16px;border-bottom:1px solid var(--line)}
+.app .body{padding:26px;min-height:180px;display:flex;align-items:center;justify-content:center}
+.yard{background:linear-gradient(#fff,#fff);border:3px solid var(--ink);border-radius:6px;padding:20px 26px;text-align:center;width:100%}
+.yard .ph{font-size:13px;color:var(--red);font-weight:700;letter-spacing:1px;margin-top:10px}
+.shirt{width:170px;height:190px;background:var(--ink);border-radius:14px 14px 18px 18px;position:relative;display:flex;align-items:flex-start;justify-content:center}
+.shirt .collar{position:absolute;top:0;left:50%;transform:translateX(-50%);width:52px;height:20px;background:var(--fog);border-radius:0 0 40px 40px}
+.shirt .chest{margin-top:44px;color:#fff}
+.bcard{width:300px;max-width:100%;height:170px;background:var(--ink);color:#fff;border-radius:12px;padding:18px 20px;display:flex;flex-direction:column;justify-content:space-between}
+.bcard .nm{font-family:'Playfair Display',serif;font-size:18px}
+.bcard .rl{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#ff5f74}
+.bcard .ct{font-size:12px;color:#c3c3cc;line-height:1.7}
+.igrow{display:flex;align-items:center;gap:14px}
+.igpic{width:74px;height:74px;border-radius:50%;background:var(--ink);display:flex;align-items:center;justify-content:center;border:3px solid var(--red)}
+.igpic svg{width:46px}
+.sig{font-size:13px;line-height:1.7}
+.sig b{font-family:'Playfair Display',serif}
+.wm{position:relative;width:100%;height:150px;border-radius:8px;background:linear-gradient(135deg,#3a3f45,#5b6570);display:flex;align-items:flex-end;justify-content:flex-end;padding:14px}
+
+/* vote */
+.vote{background:var(--ink);color:#fff}
+.vote h2{color:#fff}
+.vpick{background:#17171c;border:1px solid #2a2a31;border-radius:16px;padding:26px 22px;text-align:center}
+.vpick .lbl{display:inline-block;background:var(--red);color:#fff;font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:700;padding:5px 12px;border-radius:20px;margin-bottom:18px}
+.vpick .why{font-size:13px;color:#b9b9c2;margin-top:14px}
+.steps{background:#17171c;border:1px solid #2a2a31;border-radius:16px;padding:22px 24px;margin-top:26px}
+.steps li{margin:0 0 8px 18px;color:#d7d7de;font-size:14.5px}
+.footer{background:var(--ink);color:#8a8a92;text-align:center;padding:34px 20px;font-size:12.5px}
+.footer .tagf{color:var(--red);font-weight:600;letter-spacing:2px;text-transform:uppercase;font-size:11px;margin-bottom:6px}
+.pill{display:inline-block;font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:#fff;background:var(--red);padding:4px 12px;border-radius:20px}
+</style>
+</head>
+<body>
+
+<!-- Reusable bridge mark: strokes inherit currentColor -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="bridge" viewBox="0 0 420 128">
+    <g fill="none" stroke="currentColor" stroke-linecap="round">
+      <!-- top chord arch -->
+      <path d="M70 96 Q210 -44 350 96" stroke-width="4"/>
+      <!-- deck -->
+      <path d="M28 96 L392 96" stroke-width="4.5"/>
+      <!-- vertical hangers -->
+      <path d="M110 61.7 L110 96 M150 38.9 L150 96 M190 27.4 L190 96 M230 27.4 L230 96 M270 38.9 L270 96 M310 61.7 L310 96" stroke-width="2.2"/>
+      <!-- diagonals for truss feel -->
+      <path d="M110 61.7 L150 96 M150 38.9 L190 96 M270 38.9 L230 96 M310 61.7 L270 96" stroke-width="1.4" opacity="0.6"/>
+      <!-- piers -->
+      <path d="M70 96 L70 110 M140 96 L140 110 M280 96 L280 110 M350 96 L350 110" stroke-width="3"/>
+      <!-- water reflection -->
+      <path d="M60 116 L120 116 M150 116 L210 116 M240 116 L300 116 M330 116 L372 116" stroke-width="1.3" opacity="0.5"/>
+      <path d="M95 122 L150 122 M205 122 L265 122 M300 122 L345 122" stroke-width="1.1" opacity="0.35"/>
+    </g>
+  </symbol>
+</svg>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="wrap">
+    <div class="lockup reverse mk">
+      <svg class="bridge"><use href="#bridge"/></svg>
+      <div class="word big">ELEVATE</div>
+      <div class="rule"><span class="sub">Real Estate Group</span></div>
+    </div>
+    <div class="kicker" style="margin-top:26px">Brand &amp; Logo Guide</div>
+    <h1>The Elevate Standard</h1>
+    <p>How we show up everywhere — logos, colors, type, and the rules that keep us looking like one sharp, unified team. Real People. Real Results.</p>
+  </div>
+</div>
+
+<!-- STORY -->
+<section><div class="wrap">
+  <div class="kicker">Why the bridge</div>
+  <h2>Our mark tells Yuma who we are</h2>
+  <p class="lead">The bridge is instantly Yuma — a landmark everyone here knows. It also says exactly what we do: we're the connection that gets people from where they are to where they want to be. Sturdy, dependable, built to carry weight. That's the promise in the logo.</p>
+</div></section>
+
+<!-- LOGO SUITE -->
+<section><div class="wrap">
+  <div class="kicker">The Logo Suite</div>
+  <h2>One brand, five lockups</h2>
+  <p class="lead">Every logo below is the same brand — just built for a different space. Use the right one for the job instead of squishing one logo everywhere.</p>
+
+  <div class="grid g2" style="margin-top:30px">
+    <div class="card">
+      <div class="lockup mk" style="padding:14px 0">
+        <svg class="bridge" style="width:170px"><use href="#bridge"/></svg>
+        <div class="word big">ELEVATE</div>
+        <div class="rule"><span class="sub">Real Estate Group</span></div>
+        <div class="tag">Real People. Real Results.</div>
+      </div>
+      <div class="cap">Primary — Stacked</div>
+      <div class="use">The hero logo. Website header, yard signs, presentations, flyers, anywhere with room to breathe.</div>
+    </div>
+
+    <div class="card">
+      <div class="lockup mk" style="padding:26px 0">
+        <div style="display:flex;align-items:center;gap:16px">
+          <svg class="bridge" style="width:110px"><use href="#bridge"/></svg>
+          <div style="text-align:left">
+            <div class="word mid" style="text-indent:0">ELEVATE</div>
+            <div class="sub" style="letter-spacing:.22em">Real Estate Group</div>
+          </div>
+        </div>
+      </div>
+      <div class="cap">Horizontal</div>
+      <div class="use">Tight, wide spaces: email signatures, website footer, letterhead, sponsor banners.</div>
+    </div>
+
+    <div class="card">
+      <div class="badge mk" style="margin:8px auto">
+        <div class="arc">ELEVATE</div>
+        <svg class="bridge"><use href="#bridge"/></svg>
+        <div class="arcb">Real Estate Group</div>
+      </div>
+      <div class="cap">Badge / Stamp</div>
+      <div class="use">Social profile pictures, stickers, stamps, watermark seal. Reads clearly in a circle.</div>
+    </div>
+
+    <div class="card dark">
+      <div style="padding:8px 0"><div class="mono red"><svg class="bridge"><use href="#bridge"/></svg><div class="m">E</div></div></div>
+      <div class="cap">Submark / Monogram</div>
+      <div class="use">Tiny spaces: favicon, app icon, shirt chest, photo watermark, profile thumbnail.</div>
+    </div>
+  </div>
+
+  <div class="grid g3" style="margin-top:20px">
+    <div class="card">
+      <div class="lockup mk" style="color:var(--ink);padding:22px 0"><svg class="bridge" style="width:150px"><use href="#bridge"/></svg><div class="word sm" style="margin-top:10px">ELEVATE</div></div>
+      <div class="cap">Full Color — on White</div>
+    </div>
+    <div class="card dark">
+      <div class="lockup reverse mk" style="padding:22px 0"><svg class="bridge" style="width:150px"><use href="#bridge"/></svg><div class="word sm" style="margin-top:10px">ELEVATE</div></div>
+      <div class="cap" >Reversed — on Black</div>
+    </div>
+    <div class="card" style="background:var(--red)">
+      <div class="lockup onred mk" style="padding:22px 0"><svg class="bridge" style="width:150px"><use href="#bridge"/></svg><div class="word sm" style="margin-top:10px">ELEVATE</div></div>
+      <div class="cap" style="color:#ffd5db">On Red</div>
+    </div>
+  </div>
+  <p class="small" style="margin-top:14px">Three color treatments cover every background: <b>black on light</b>, <b>white reversed on dark</b>, and <b>white on red</b>. Never invent a fourth.</p>
+</div></section>
+
+<!-- COLOR -->
+<section><div class="wrap">
+  <div class="kicker">Color Palette</div>
+  <h2>Black, red, and room to breathe</h2>
+  <p class="lead">Our color is deliberately simple — it looks premium and it's easy for the whole team to stay consistent. Red is the accent, not the whole page. White space is a feature.</p>
+  <div class="grid g4" style="margin-top:28px">
+    <div class="sw"><div class="chip" style="background:#111114"></div><div class="meta"><div class="nm">Ink Black</div><div class="hx">#111114</div><div class="role">Primary. Logo, text, backgrounds.</div></div></div>
+    <div class="sw"><div class="chip" style="background:#c8102e"></div><div class="meta"><div class="nm">Elevate Red</div><div class="hx">#C8102E</div><div class="role">Accent only. CTAs, highlights, tagline.</div></div></div>
+    <div class="sw"><div class="chip" style="background:#5b6570"></div><div class="meta"><div class="nm">Steel Gray</div><div class="hx">#5B6570</div><div class="role">Secondary text, dividers, captions.</div></div></div>
+    <div class="sw"><div class="chip" style="background:#f4f2ee;border-bottom:1px solid var(--line)"></div><div class="meta"><div class="nm">Fog White</div><div class="hx">#F4F2EE</div><div class="role">Soft backgrounds. Pure #FFFFFF for logo space.</div></div></div>
+  </div>
+  <div class="grid g2" style="margin-top:22px">
+    <div class="dl do"><h4>Color balance</h4><ul><li>~70% black &amp; white, ~20% neutral, ~10% red</li><li>Use red to point the eye: one button, one word, one line</li><li>Keep big areas clean — let the logo lead</li></ul></div>
+    <div class="dl dont"><h4>Avoid</h4><ul><li>Red walls of color or red body text</li><li>Gradients, drop shadows, or neon on the logo</li><li>Random off-brand colors from a template</li></ul></div>
+  </div>
+</div></section>
+
+<!-- TYPOGRAPHY -->
+<section><div class="wrap">
+  <div class="kicker">Typography</div>
+  <h2>Two fonts. That's it.</h2>
+  <div class="grid g2" style="margin-top:26px">
+    <div class="spec">
+      <div class="pill">Headlines &amp; Logo</div>
+      <div class="pf big" style="margin-top:16px">Playfair Display</div>
+      <div class="pf" style="font-size:22px;margin-top:8px">Elevate. Rise higher.</div>
+      <p class="small" style="margin-top:12px">The elegant serif. Used for the ELEVATE wordmark, headlines, and big statements. Feels premium and established.</p>
+    </div>
+    <div class="spec">
+      <div class="pill" style="background:var(--ink)">Everything Else</div>
+      <div class="inter" style="font-size:40px;font-weight:700;margin-top:16px">Inter</div>
+      <div class="inter" style="font-size:15px;margin-top:8px">The clean sans-serif for body copy, captions,<br>buttons, prices, and taglines. Easy to read anywhere.</div>
+      <p class="small" style="margin-top:12px">Weights we use: Regular, Medium, Semibold, Bold.</p>
+    </div>
+  </div>
+  <p class="small" style="margin-top:14px">Free everywhere via Google Fonts. On Canva: <b>Playfair Display</b> + <b>Inter</b>. Never swap in Comic Sans, Papyrus, or a template's default font.</p>
+</div></section>
+
+<!-- CLEAR SPACE + MIN SIZE -->
+<section><div class="wrap">
+  <div class="kicker">Protect the mark</div>
+  <h2>Clear space &amp; minimum size</h2>
+  <div class="grid g2" style="margin-top:26px">
+    <div class="clearbox">
+      <div class="csvg lockup mk" style="border:2px dashed var(--line);padding:26px;border-radius:12px"><svg class="bridge" style="width:150px"><use href="#bridge"/></svg><div class="word sm" style="margin-top:8px">ELEVATE</div></div>
+      <p class="small" style="margin-top:14px">Keep a clear margin around the logo equal to the height of the letter “E”. Nothing crowds it — no text, no photos, no edges.</p>
+    </div>
+    <div class="clearbox">
+      <div style="display:flex;align-items:flex-end;gap:24px;justify-content:center;padding:20px 0">
+        <div class="lockup mk"><svg class="bridge" style="width:120px"><use href="#bridge"/></svg><div class="word sm" style="font-size:14px;margin-top:6px">ELEVATE</div></div>
+        <div class="mono" style="width:52px;height:52px"><svg class="bridge" style="width:34px"><use href="#bridge"/></svg></div>
+      </div>
+      <p class="small" style="margin-top:14px">Minimum sizes: full lockup no smaller than <b>140px / 1.2in</b> wide. Below that, switch to the <b>monogram</b> so it stays crisp.</p>
+    </div>
+  </div>
+</div></section>
+
+<!-- DO / DONT -->
+<section><div class="wrap">
+  <div class="kicker">The Rules</div>
+  <h2>Do &amp; Don't</h2>
+  <div class="grid g2" style="margin-top:24px">
+    <div class="dl do"><h4>Do</h4><ul>
+      <li>Use the approved files straight from the brand folder</li>
+      <li>Give the logo clear space and a clean background</li>
+      <li>Pick the lockup that fits the space (stacked / horizontal / badge / monogram)</li>
+      <li>Keep it black, white, or on-red only</li>
+      <li>Post everything bilingual when it fits the audience</li>
+    </ul></div>
+    <div class="dl dont"><h4>Don't</h4><ul>
+      <li>Stretch, squish, rotate, or recolor the logo</li>
+      <li>Add shadows, outlines, glows, or gradients</li>
+      <li>Put the black logo on a busy photo (use reversed or the badge)</li>
+      <li>Retype “ELEVATE” in a different font</li>
+      <li>Screenshot the logo — always use the real file</li>
+    </ul></div>
+  </div>
+</div></section>
+
+<!-- APPLICATIONS -->
+<section><div class="wrap">
+  <div class="kicker">In the Wild</div>
+  <h2>Where the logo lives</h2>
+  <p class="lead">Same brand, everywhere the team shows up. Here's the quick picture.</p>
+  <div class="grid g3" style="margin-top:28px">
+
+    <div class="app"><div class="head">Yard / Open House Sign</div><div class="body"><div class="yard">
+      <div class="lockup mk"><svg class="bridge" style="width:130px"><use href="#bridge"/></svg><div class="word sm">ELEVATE</div><div class="rule"><span class="sub" style="font-size:9px">Real Estate Group</span></div></div>
+      <div class="ph">928-256-6459</div>
+    </div></div></div>
+
+    <div class="app"><div class="head">Team Shirt (chest)</div><div class="body"><div class="shirt"><div class="collar"></div><div class="chest lockup reverse mk"><svg class="bridge" style="width:66px"><use href="#bridge"/></svg><div class="word" style="font-size:12px;letter-spacing:.28em;text-indent:.28em">ELEVATE</div></div></div></div></div>
+
+    <div class="app"><div class="head">Business Card</div><div class="body"><div class="bcard">
+      <div class="lockup reverse mk" style="align-items:flex-start"><svg class="bridge" style="width:96px"><use href="#bridge"/></svg><div class="word" style="font-size:16px;letter-spacing:.26em;text-indent:.26em;margin-top:4px">ELEVATE</div></div>
+      <div><div class="nm">Jose “JR” Lara</div><div class="rl">Team Lead · REALTOR®</div><div class="ct">928-256-6459 · The Realty Agency</div></div>
+    </div></div></div>
+
+    <div class="app"><div class="head">Instagram Profile</div><div class="body"><div class="igrow">
+      <div class="igpic"><svg class="bridge" style="width:46px;color:#fff"><use href="#bridge"/></svg></div>
+      <div><div style="font-weight:700">elevate.reg</div><div class="small">Real Estate Group · Yuma &amp; San Luis, AZ<br>Real People. Real Results. 📲 928-256-6459</div></div>
+    </div></div></div>
+
+    <div class="app"><div class="head">Email Signature</div><div class="body"><div class="sig">
+      <b style="font-size:16px">Jose “JR” Lara</b><br>
+      <span style="color:var(--red);font-weight:600">Elevate Real Estate Group</span><br>
+      The Realty Agency · Yuma, AZ<br>928-256-6459
+    </div></div></div>
+
+    <div class="app"><div class="head">Photo Watermark</div><div class="body"><div class="wm">
+      <div class="lockup reverse mk" style="opacity:.92"><svg class="bridge" style="width:70px"><use href="#bridge"/></svg><div class="word" style="font-size:11px;letter-spacing:.26em;text-indent:.26em">ELEVATE</div></div>
+    </div></div></div>
+
+  </div>
+</div></section>
+
+<!-- VOTE -->
+<section class="vote"><div class="wrap">
+  <div class="kicker" style="color:#ff5f74">Team Task #1</div>
+  <h2>Cast your vote 🗳️</h2>
+  <p class="lead" style="color:#c8c8d0">We're locking in three official uses. Here's my recommendation for each — react in the group chat with the one you want, or suggest a tweak. This is OUR brand.</p>
+
+  <div class="grid g3" style="margin-top:30px">
+    <div class="vpick">
+      <div class="lbl">Main Logo</div>
+      <div class="lockup reverse mk"><svg class="bridge" style="width:150px"><use href="#bridge"/></svg><div class="word mid">ELEVATE</div><div class="rule"><span class="sub">Real Estate Group</span></div><div class="tag">Real People. Real Results.</div></div>
+      <div class="why">Recommended: <b>Stacked primary.</b> Most authority and room to breathe. Signs, site, docs.</div>
+    </div>
+    <div class="vpick">
+      <div class="lbl">Social Logo</div>
+      <div class="badge reverse mk" style="border-color:#fff"><div class="arc">ELEVATE</div><svg class="bridge"><use href="#bridge"/></svg><div class="arcb">Real Estate Group</div></div>
+      <div class="why">Recommended: <b>Circle badge.</b> Fits profile pics perfectly and stays sharp when tiny.</div>
+    </div>
+    <div class="vpick">
+      <div class="lbl">Shirt Logo</div>
+      <div class="mono red" style="width:150px;height:150px"><svg class="bridge"><use href="#bridge"/></svg><div class="m">E</div></div>
+      <div class="why">Recommended: <b>Monogram</b> on the chest, full stacked logo on the back. Clean and pro.</div>
+    </div>
+  </div>
+
+  <div class="steps">
+    <div style="font-weight:700;margin-bottom:10px">How to vote</div>
+    <ol class="steps" style="padding-left:0;border:none;background:none;margin:0">
+      <li>Reply in the group chat with your pick for each: <b>Main / Social / Shirt</b></li>
+      <li>Say if you want <b>full color, all-black, or reversed</b> as the everyday default</li>
+      <li>Flag anything you'd change — spacing, the tagline, the bridge weight</li>
+    </ol>
+  </div>
+</div></section>
+
+<div class="footer">
+  <div class="tagf">Real People. Real Results.</div>
+  Elevate Real Estate Group · The Realty Agency · Yuma &amp; San Luis, AZ · 928-256-6459<br>
+  Brand guide v1 — working draft for team review. Logos shown are vector concepts; final files delivered on approval.
+</div>
+
+</body>
+</html>
